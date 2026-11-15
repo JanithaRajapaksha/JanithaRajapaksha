@@ -151,8 +151,10 @@ My engineering focus centers on **hardware-software co-design**: engineering rea
 ### 📊 GitHub Activity &amp; Engineering Metrics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JanithaRajapaksha&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=00E5FF&icon_color=38BDF8&text_color=94A3B8" alt="Janitha's GitHub Stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JanithaRajapaksha&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=00E5FF&text_color=94A3B8" alt="Top Languages" height="165" />
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api?username=JanithaRajapaksha&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=00E5FF&icon_color=38BDF8&text_color=94A3B8" alt="Janitha's GitHub Stats" height="165" />
+  <img src="https://github-readme-stats-anuraghazra1.vercel.app/api/top-langs/?username=JanithaRajapaksha&layout=compact&theme=tokyonight&hide_border=true&bg_color=0b0f19&title_color=00E5FF&text_color=94A3B8" alt="Top Languages" height="165" />
+  <br/><br/>
+  <img src="https://streak-stats.demolab.com/?user=JanithaRajapaksha&theme=tokyonight&hide_border=true&background=0B0F19&ring=00E5FF&fire=00E5FF&currStreakLabel=00E5FF" alt="GitHub Streak" height="165" />
 </div>
 
 <br/>
