@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="100%" height="100%" style="background:#0b0f19;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5);">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a12"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#030712"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <linearGradient id="amber-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.6"/>
+      <circle cx="30" cy="0" r="1" fill="#38bdf8" fill-opacity="0.3"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Consolas', 'Fira Code', 'Monaco', 'Courier New', monospace; }
+    .sans { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Inter', Roboto, sans-serif; }
+    .fade-in { animation: fadeIn 1.5s ease-in-out; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.9; }
+    }
+    .pulse-node { animation: pulse 3s infinite ease-in-out; }
+  </style>
+
+  <!-- Base Background -->
+  <rect width="900" height="270" fill="url(#bg-grad)"/>
+  <rect width="900" height="270" fill="url(#grid)"/>
+
+  <!-- PCB Circuit Traces & Hardware Graphics (Right Side) -->
+  <g opacity="0.85">
+    <!-- Trace lines -->
+    <path d="M 520 270 L 520 220 L 580 160 L 720 160 L 750 130 L 840 130" fill="none" stroke="#00E5FF" stroke-width="1.5" stroke-opacity="0.4"/>
+    <path d="M 640 0 L 640 50 L 690 100 L 770 100 L 800 70 L 900 70" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.3"/>
+    <path d="M 680 270 L 720 230 L 810 230 L 840 200 L 900 200" fill="none" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.4"/>
+    <path d="M 590 0 L 590 40 L 550 80 L 460 80" fill="none" stroke="#6366F1" stroke-width="1" stroke-opacity="0.3"/>
+    
+    <!-- IC Chip / Microcontroller Motif -->
+    <g transform="translate(730, 80)">
+      <!-- Main IC Body -->
+      <rect x="0" y="0" width="84" height="84" rx="8" fill="#0d1527" stroke="#00E5FF" stroke-width="1.5" stroke-opacity="0.7"/>
+      <rect x="8" y="8" width="68" height="68" rx="4" fill="#070c18" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="16" cy="16" r="3" fill="#00E5FF" fill-opacity="0.8"/>
+      
+      <!-- IC Pins (Top & Bottom) -->
+      <path d="M 18 -6 L 18 0 M 34 -6 L 34 0 M 50 -6 L 50 0 M 66 -6 L 66 0" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.7"/>
+      <path d="M 18 84 L 18 90 M 34 84 L 34 90 M 50 84 L 50 90 M 66 84 L 66 90" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.7"/>
+      <!-- IC Pins (Left & Right) -->
+      <path d="M -6 18 L 0 18 M -6 34 L 0 34 M -6 50 L 0 50 M -6 66 L 0 66" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.7"/>
+      <path d="M 84 18 L 90 18 M 84 34 L 90 34 M 84 50 L 90 50 M 84 66 L 90 66" stroke="#00E5FF" stroke-width="2" stroke-opacity="0.7"/>
+
+      <text x="42" y="44" fill="#E2E8F0" font-size="10" font-weight="700" text-anchor="middle" class="mono" letter-spacing="1">ARM</text>
+      <text x="42" y="58" fill="#38BDF8" font-size="8" text-anchor="middle" class="mono">Cortex-M</text>
+    </g>
+
+    <!-- Signal Sine Waveform -->
+    <path d="M 460 230 Q 475 210, 490 230 T 520 230 T 550 230 T 580 230 T 610 230 T 640 230" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.5"/>
+    
+    <!-- PCB Via Nodes -->
+    <circle cx="580" cy="160" r="3.5" fill="#070c18" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="750" cy="130" r="3.5" fill="#070c18" stroke="#00E5FF" stroke-width="1.5"/>
+    <circle cx="690" cy="100" r="3" fill="#070c18" stroke="#38BDF8" stroke-width="1.5"/>
+    <circle cx="720" cy="230" r="3" fill="#070c18" stroke="#10B981" stroke-width="1.5"/>
+    <circle cx="840" cy="200" r="3" fill="#070c18" stroke="#10B981" stroke-width="1.5"/>
+    
+    <!-- Glowing Pulse Points -->
+    <circle cx="580" cy="160" r="1.5" fill="#00E5FF" class="pulse-node"/>
+    <circle cx="750" cy="130" r="1.5" fill="#00E5FF" class="pulse-node"/>
+    <circle cx="840" cy="200" r="1.5" fill="#10B981" class="pulse-node"/>
+  </g>
+
+  <!-- Left Content Area -->
+  <g transform="translate(48, 42)">
+    <!-- Terminal Prompt / System ID -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="310" height="22" rx="4" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="10" cy="11" r="3.5" fill="#EF4444" opacity="0.8"/>
+      <circle cx="20" cy="11" r="3.5" fill="#F59E0B" opacity="0.8"/>
+      <circle cx="30" cy="11" r="3.5" fill="#10B981" opacity="0.8"/>
+      <text x="42" y="15" fill="#38BDF8" font-size="10.5" font-weight="600" class="mono">SYSTEM // HARDWARE-SOFTWARE INTEGRATION</text>
+    </g>
+
+    <!-- Name / Primary Identifier -->
+    <text x="0" y="68" fill="#F8FAFC" font-size="34" font-weight="800" class="sans" letter-spacing="-0.5">
+      Janitha Rajapaksha
+    </text>
+
+    <!-- Subtitle / Discipline -->
+    <text x="0" y="96" fill="url(#cyan-glow)" font-size="14" font-weight="600" class="mono" letter-spacing="0.5">
+      ELECTRONICS &amp; TELECOMMUNICATION ENGINEER
+    </text>
+
+    <!-- Summary Tagline -->
+    <text x="0" y="122" fill="#94A3B8" font-size="12.5" font-weight="400" class="sans">
+      Undergraduate at KDU &amp; BIT at UCSC • Embedded Firmware, Autonomous Robotics &amp; Applied Edge AI
+    </text>
+
+    <!-- Core Pill Badges -->
+    <g transform="translate(0, 146)">
+      <!-- Badge 1: Embedded & RTOS -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="134" height="26" rx="13" fill="#0E1E38" stroke="#0284C7" stroke-width="1"/>
+        <circle cx="12" cy="13" r="4" fill="#00E5FF"/>
+        <text x="24" y="17" fill="#E2E8F0" font-size="10" font-weight="600" class="sans">STM32 / ESP32 / RTOS</text>
+      </g>
+
+      <!-- Badge 2: Robotics & ROS2 -->
+      <g transform="translate(142, 0)">
+        <rect x="0" y="0" width="136" height="26" rx="13" fill="#0D252E" stroke="#0D9488" stroke-width="1"/>
+        <circle cx="12" cy="13" r="4" fill="#2DD4BF"/>
+        <text x="24" y="17" fill="#E2E8F0" font-size="10" font-weight="600" class="sans">ROS2 / Nav2 / SLAM</text>
+      </g>
+
+      <!-- Badge 3: PCB & Hardware -->
+      <g transform="translate(286, 0)">
+        <rect x="0" y="0" width="134" height="26" rx="13" fill="#1C1E36" stroke="#6366F1" stroke-width="1"/>
+        <circle cx="12" cy="13" r="4" fill="#818CF8"/>
+        <text x="24" y="17" fill="#E2E8F0" font-size="10" font-weight="600" class="sans">Altium / KiCad / CAD</text>
+      </g>
+
+      <!-- Badge 4: Edge AI & Vision -->
+      <g transform="translate(428, 0)">
+        <rect x="0" y="0" width="144" height="26" rx="13" fill="#1A241E" stroke="#16A34A" stroke-width="1"/>
+        <circle cx="12" cy="13" r="4" fill="#4ADE80"/>
+        <text x="24" y="17" fill="#E2E8F0" font-size="10" font-weight="600" class="sans">PyTorch / Edge AI / CV</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Status Line -->
+  <rect x="0" y="266" width="900" height="4" fill="url(#cyan-glow)"/>
+</svg>
