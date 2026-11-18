@@ -15,7 +15,7 @@
 
 ### ⚡ Engineering Overview
 
-I am an **Electronics and Telecommunication Engineering undergraduate** at General Sir John Kotelawala Defence University (KDU) and a **Bachelor of Information Technology (BIT)** student at the University of Colombo School of Computing (UCSC). 
+I am an **Electronics Engineering undergraduate** at General Sir John Kotelawala Defence University (KDU) and a **Bachelor of Information Technology (BIT)** student at the University of Colombo School of Computing (UCSC). 
 
 My engineering focus centers on **hardware-software co-design**: engineering real-time embedded firmware, designing custom PCBs, deploying computer vision and deep learning models to the edge, and architecting autonomous robotic systems.
 
